@@ -1,14 +1,17 @@
-OSX_SCRIPT_FOLDER:=sigrok-util/cross-compile/macosx
-OSX_SCRIPT_BASENAME:=sigrok-native-macosx
-OSX_SCRIPT_PATH:=$(OSX_SCRIPT_FOLDER)/$(OSX_SCRIPT_BASENAME)
+# OSX_SCRIPT_FOLDER:=sigrok-util/cross-compile/macosx
+# OSX_SCRIPT_BASENAME:=sigrok-native-macosx
+# OSX_SCRIPT_PATH:=$(OSX_SCRIPT_FOLDER)/$(OSX_SCRIPT_BASENAME)
 
 .PHONY:build
 build:
-	brew install --HEAD takesako/sigrok/sigrok-firmware-fx2lafw
-	brew install --HEAD takesako/sigrok/libsigrokdecode
-	brew install --HEAD takesako/sigrok/libsigrok
-	brew install --build-from-source --HEAD takesako/sigrok/pulseview
-	brew install --HEAD takesako/sigrok/sigrok-cli
+	brew install --HEAD olegtarasov/sigrok/pulseview
+	brew install --HEAD olegtarasov/sigrok/sigrok-cli
+s
+#	brew install --HEAD takesako/sigrok/sigrok-firmware-fx2lafw
+#	brew install --HEAD takesako/sigrok/libsigrokdecode
+#	brew install --HEAD takesako/sigrok/libsigrok
+#	brew install --build-from-source --HEAD takesako/sigrok/pulseview
+#	brew install --HEAD takesako/sigrok/sigrok-cli
 
 # 	brew install libzip libftdi libusb libtool glibmm doxygen autoconf-archive sdcc python3 boost qt pkg-config cmake glib autoconf automake swig check
 # 	git clone git://sigrok.org/sigrok-util
