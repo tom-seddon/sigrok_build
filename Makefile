@@ -6,7 +6,7 @@
 build:
 	brew install --HEAD olegtarasov/sigrok/pulseview
 	brew install --HEAD olegtarasov/sigrok/sigrok-cli
-s
+
 #	brew install --HEAD takesako/sigrok/sigrok-firmware-fx2lafw
 #	brew install --HEAD takesako/sigrok/libsigrokdecode
 #	brew install --HEAD takesako/sigrok/libsigrok
