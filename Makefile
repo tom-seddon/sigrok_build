@@ -16,7 +16,10 @@ build:
 # Replace that reference with plain old qt.
 	sed -I '' "s/qt@5.5/qt/g" "$(OSX_SCRIPT_PATH)"
 
+# Check that the thing still refers to python@2 specifically, and
+# remove it.
+	grep "python@2" "$(OSX_SCRIPT_PATH)"
+	sed -I '' "s/python@2//g" "$(OSX_SCRIPT_PATH)"
+
 # Run the script.
 	cd "$(OSX_SCRIPT_FOLDER)" && "./$(OSX_SCRIPT_BASENAME)"
-
-
