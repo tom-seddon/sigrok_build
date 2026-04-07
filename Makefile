@@ -17,6 +17,6 @@ build:
 	sed -I '' "s/qt@5.5/qt/g" "$(OSX_SCRIPT_PATH)"
 
 # Run the script.
-	cd "$(OSX_SCRIPT_FOLDER) && "./$(OSX_SCRIPT_BASENAME)"
+	cd "$(OSX_SCRIPT_FOLDER)" && "./$(OSX_SCRIPT_BASENAME)"
 
 
