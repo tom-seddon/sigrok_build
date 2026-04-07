@@ -7,7 +7,7 @@ build:
 	brew install --HEAD takesako/sigrok/sigrok-firmware-fx2lafw
 	brew install --HEAD takesako/sigrok/libsigrokdecode
 	brew install --HEAD takesako/sigrok/libsigrok
-	brew install --HEAD takesako/sigrok/pulseview
+	brew install --build-from-source --HEAD takesako/sigrok/pulseview
 	brew install --HEAD takesako/sigrok/sigrok-cli
 
 # 	brew install libzip libftdi libusb libtool glibmm doxygen autoconf-archive sdcc python3 boost qt pkg-config cmake glib autoconf automake swig check
